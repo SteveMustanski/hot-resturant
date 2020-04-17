@@ -147,8 +147,11 @@
       $("#tableList").empty();
     });
   }
-
-  $("#clear").on("click", clearTable);
+  
+  $("#clear").on("click", function() {
+    clearTable();
+    location.reload();
+  })
 
 
   // Run Queries!

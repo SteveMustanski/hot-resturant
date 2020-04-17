@@ -1,5 +1,5 @@
-const tableData = require('../data/table-data');
-const waitingListData = require('../data/waitinglist-data');
+let tableData = require('../data/table-data');
+let waitingListData = require('../data/waitinglist-data');
 
 module.exports = (app) => {
 
@@ -19,5 +19,10 @@ module.exports = (app) => {
       res.json(false);
     }
   })
+
+  app.post('/api/clear', function() {
+    tableData = [];
+    waitingListData = [];
+  });
 
 }
