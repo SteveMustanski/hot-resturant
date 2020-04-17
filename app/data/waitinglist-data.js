@@ -1,4 +1,4 @@
-const tableArray = [
+const waitingArray = [
   {
     customerName: 'Pepper',
     customerEmail: 'pepper@example.com',
